@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav" >
+        <div class="logo"> Bharath Ravuri</div>
+        <div>
+            <ul class= "nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="experience" >Experience</a></li> -->
+                <li><a href="#technicalskills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul >
+        </div>
+    </nav>
+    <nav id="menu-nav">
+        <div class="logo"> Bharath Ravuri</div>
+        <div class="menu">
+            <div class="menu-icon" onCLick="toggleMenu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onCLick="toggleMenu()">About</a></li>
+                <!-- <li><a href="experience" onCLick="toggleMenu()">Experience</a></li> -->
+                <li><a href="#technicalskills" onCLick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#projects" onCLick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onCLick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+     </nav>
+     <section id="profile">
+        <div class="section__pic-container">
+            <img id="profile_picture" src="./assests/profile_picture.jpeg" alt="bharath ravuri profilepicture" />
+        </div>
+        <div class="section__text" >
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Bharath Ravuri</h1>
+            <p class="section__text__p1">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1"
+                onClick="location.href='./#contact'"
+                >Contact Me
+                </button>
+                <button class="btn btn-color-2"
+                onClick="location.href='./#projects'"
+                >View Projects
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assests/linkedin.png"  alt="My LinkedIn Profile"
+                class="icon"
+                onClick="location.href='https://www.linkedin.com/in/ravuribharath/'"
+                />
+                <img src="./Assests/github.png"  alt="My Github Profile"
+                class="icon"
+                onClick="location.href='https://github.com/bharathravuri6522'"
+                />
+            </div>
+        </div>
+        <img src="./Assests/arrow.png" alt="arrow icon" class="icon arrow"
+        onClick="location.href='./#about'" 
+        />
+    </section>
+    <section id="about">
+            <p class="section__text__p1">Get to Know More</p>
+            <h1 class="title" >About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container2">
+                    <img
+                    src="./Assests/Profile-pic.jpg"
+                    alt="profile picture"
+                    class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./Assests/experience.png" alt="experience icon"
+                            class="icon" />
+                            <h3>Experience</h3>
+                            <p>4+ years <br /> Full Stack Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./Assests/education.png" alt="education icon"
+                            class="icon" />
+                            <h3>Education</h3>
+                            <p>Master's in Computer Science <br /> at University of Louisiana at Lafayette</p>
+                        </div>
+
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Welcome to my portfolio! I'm driven by a relentless curiosity and passion for growth, 
+                            constantly seeking new challenges and opportunities to expand my skills and knowledge
+                         in the ever-evolving world of technology. With a keen interest in emerging trends and 
+                         cutting-edge developments, I thrive on pushing the boundaries of what's possible in 
+                         software development. My adaptable nature allows me to embrace change and tackle challenges 
+                         head-on, while my collaborative spirit fosters innovation and drives impactful outcomes. 
+                         As you navigate through my portfolio, you'll discover my unwavering commitment to personal 
+                         and professional development, fueled by a genuine enthusiasm for learning and exploration. 
+                         Let's embark on this journey together and unlock the endless possibilities that lie ahead!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./Assests/arrow.png" alt="arrow icon" class="icon arrow"
+               onClick="location.href='./#experience'" 
+               />
+    </section>
+    <section id="technicalskills">
+        <p class="section__text__p1">Explore My</p>
+        <!-- <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color experienced"></div>
+                <span>Experienced</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color intermediate"></div>
+                <span>Intermediate</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color beginner"></div>
+                <span>Beginner</span>
+            </div>
+        </div> -->
+        <h1 class="title">Technical Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Front-End</h2>
+                    <div class="article-container">
+                        <article class="box">
+                            <img src="./Assests/ReactJs.png" alt="React logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/html5.png" alt="html5 logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/css3.png" alt="CSS3 logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/JavaScript.png" alt="JavaScript logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/Typescript.png" alt="TypeScript logo" class="logo" />
+                            <div class="skill-bar beginner"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/Angular.png" alt="Angular logo" class="logo" />
+                            <div class="skill-bar beginner"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/bootstrap.png" alt="Bootstrap logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Back-End</h2>
+                    <div class="article-container">
+                        <article class="box">
+                            <img src="./Assests/python-logo.png" alt="Python logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/C++ logo.png" alt="C++ logo" class="logo" />
+                            <div class="skill-bar intermediate"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/java-logo.png" alt="Java logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/Node.js-Logo.png" alt="Node js logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/postgres-logo.png" alt="Postgres logo" class="logo" />
+                            <div class="skill-bar experienced"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/mongoDb-logo.png" alt="mongoDB logo" class="logo" />
+                            <div class="skill-bar intermediate"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/springboot.png" alt="springboot logo" class="logo" />
+                            <div class="skill-bar beginner"></div>
+                        </article>
+                        <article class="box">
+                            <img src="./Assests/git logo.png" alt="Git logo" class="logo" />
+                            <div class="skill-bar intermediate"></div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assests/arrow.png" alt="arrow icon" class="icon arrow"
+        onClick="location.href='./#projects'" 
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assests/project1.png"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Insightify</h2>
+                <p class="text-container">This webpage has been build using React and Node with Express and I have also accessed OpenAI API to convert user reviews into insightful data of a given format. Technology Stack used for this project Postgres, Express, React, Node. </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/bharathravuri6522/Insightify'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/'">
+                        Live Demo
+                    </button> -->
+                </div>
+
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assests/project2.png"
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Tek Solvent</h2>
+                <p class="text-container">This website has been build using React and Node with Express. I have built Tek Solvent team to build website and also collaborated with the development to design SaaS product for Human Resource Management System.</p>
+
+                <div class="btn-container">
+
+                    <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/'">
+                        Github
+                    </button> -->
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://www.teksolvent.com/'">
+                        Live Website
+                    </button>
+                </div>
+
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assests/project3.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Comverse.io</h2>
+                <p class="text-container">This website has been build using Word press. I have collaborated with Comverse which is accounting firm located in Bangalore, India to design a no-code website for them. This is live and view it using the view demo button.</p>
+
+                <div class="btn-container">
+                    <!-- <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/'">
+                        Github
+                    </button> -->
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://www.comverse.co.in/'">
+                        Live Website
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <img src="./Assests/arrow.png" alt="arrow icon" class="icon arrow"
+        onClick="location.href='./#contact'" 
+        />
+
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assests/email.png" alt="Email Icon" class="icon contact-icon .email-icon" />
+                <p><a href="mailto:ravuri.bharath2@outlook.com">ravuri.bharath2@outlook.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assests/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/ravuribharath/">LinkedIn</a></p>
+            </div>
+        </div>
+        
+    </section> 
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class= "nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="experience" >Experience</a></li> -->
+                    <li><a href="#technicalskills">Technical Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Bharath Ravuri. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
